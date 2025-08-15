@@ -1,0 +1,300 @@
+{
+    "name": "Hansel and Gretel",
+    "authors": ["Grimm Brothers"],
+    "date-formats": [
+        {
+            "id": "universal",
+            "description":"Date format relative to the ambiguous in-universe timeline",
+            "format":"SSSS",
+            "valid-from": "Beginning of time",
+            "valid-to": "End of time"
+        },
+        {
+            "id": "irl",
+            "description":"A fictional date range to place the story in a real-world context",
+            "format":"YYYY-MM-DD-HH:MM",
+            "valid-from": "1812-12-20-08:00",
+            "valid-to": "1812-12-20-19:00"
+        }
+    ],
+    "date-translations": [
+        {
+            "id": "universal-to-irl",
+            "cross-references":[
+                {
+                    "points":[
+                        {"format": "universal", "date": "Beginning of time"},
+                        {"format": "irl", "date": "1812-12-20-08:00"}
+                    ]
+                },
+                {
+                    "points":[
+                        {"format": "universal", "date": "End of time"},
+                        {"format": "irl", "date": "1812-12-20-19:00"}
+                    ]
+                }
+            ]
+        }
+    ],
+    "characters": [
+        {
+            "name": "Hansel",
+            "role": "protagonist"
+        },
+        {
+            "name": "Gretel",
+            "role": "protagonist"
+        },
+        {
+            "name": "Witch",
+            "role": "antagonist",
+            "died": "story/hansel-and-gretel"
+        }
+    ],
+    "perspectives": [
+        {
+            "id": "universal-perspective",
+            "valid-from": "universal/Beginning of time",
+            "valid-to": "universal/End of time"
+        }
+    ],
+    "places": [
+        {
+            "id": "forest",
+            "created": "universal/Beginning of time",
+            "description": "A dark and dense forest where Hansel and Gretel are abandoned."
+        },
+        {
+            "id": "witchs-house",
+            "created": "universal/Beginning of time",
+            "destroyed": "story/hansel-and-gretel",
+            "description": "A house made of candy and sweets, owned by the Witch."
+        }
+    ],
+    "compendia": [
+        {
+            "id": "characters",
+            "valid-from": "universal/Beginning of time",
+            "valid-to": "End of time",
+            "facts" : [
+                {
+                    "fact": "Hansel is known for his cleverness and resourcefulness."
+                },
+                {
+                    "fact": "Gretel is known for her bravery and quick thinking."
+                },
+                {
+                    "fact": "The Witch is known for her cunning and malevolence."
+                }
+            ]
+        },
+        {
+            "id":"places/forest",
+            "valid-from": "universal/Beginning of time",
+            "valid-to": "End of time",
+            "facts": [
+                {
+                    "fact": "The forest is dark and dense, making it easy to get lost."
+                },
+                {
+                    "fact": "The forest is home to many wild animals."
+                }
+            ]
+        },
+        {
+            "id":"places/witchs-house",
+            "valid-from": "universal/Beginning of time",
+            "valid-to": "End of time",
+            "facts": [
+                {
+                    "fact": "The Witch's house is made of candy and sweets."
+                },
+                {
+                    "fact": "The house has walls of gingerbread and cake."
+                },
+                {
+                    "fact": "The windows are made of clear sugar."
+                },
+                {
+                    "fact": "The roof is covered with various confections and sweets."
+                },
+                {
+                    "fact": "The Witch uses the house to lure children."
+                },
+                {
+                    "fact": "The house is enchanted to appear more inviting."
+                },
+                {
+                    "fact": "The Witch's house is located deep in the forest."
+                },
+                {
+                    "fact": "The house contains a large wood-burning oven used for cooking."
+                },
+                {
+                    "fact": "The oven is large enough for a person to crawl inside."
+                },
+                {
+                    "fact": "The house has a cage where the Witch imprisons children."
+                },
+                {
+                    "fact": "The interior of the house contrasts with its sweet exterior, being dark and sinister."
+                },
+                {
+                    "fact": "The house contains the Witch's treasure hoard of pearls and precious stones."
+                },
+                {
+                    "fact": "The Witch's house is ultimately destroyed by fire."
+                }
+            ]
+        }
+    ],
+    "series": [
+        {
+            "id": "series/the-story",
+            "as-of": "universal/Beginning of time",
+            "thru-to": "universal/End of time",
+            "default-perspective": "universal",
+            "compendia": [
+                "character/hansel",
+                "character/gretel",
+                "character/witch",
+                "story/hansel-and-gretel"
+            ],
+            "episodes": [
+                {
+                    "id":"episode/the-story",
+                    "valid-from": "universal/Beginning of time",
+                    "valid-to": "universal/End of time",
+                    "default-perspective": "universal",
+                    "facts" : [{
+                        "fact": "Hansel and Gretel are siblings."
+                    }],
+                    "events": [
+                        {
+                            "date": "universal/Beginning of time",
+                            "event": "A great famine strikes the land, causing widespread hunger and desperation."
+                        },
+                        {
+                            "event": "Hansel and Gretel's stepmother convinces their father to abandon the children in the forest due to lack of food."
+                        },
+                        {
+                            "event": "Hansel overhears his parents' plan and fills his pockets with white pebbles."
+                        },
+                        {
+                            "event": "The parents lead Hansel and Gretel deep into the forest under the pretense of gathering wood."
+                        },
+                        {
+                            "event": "Hansel secretly drops white pebbles along the path as they walk deeper into the forest."
+                        },
+                        {
+                            "event": "The parents abandon Hansel and Gretel in the forest, leaving them alone and lost."
+                        },
+                        {
+                            "event": "Hansel and Gretel follow the trail of white pebbles back home in the moonlight."
+                        },
+                        {
+                            "event": "The stepmother convinces the father to abandon the children again, this time ensuring they cannot return."
+                        },
+                        {
+                            "event": "Hansel attempts to collect pebbles again but finds the door locked by his stepmother."
+                        },
+                        {
+                            "event": "Hansel uses breadcrumbs from his breakfast instead of pebbles on the second abandonment attempt."
+                        },
+                        {
+                            "event": "The parents lead Hansel and Gretel even deeper into the forest than before."
+                        },
+                        {
+                            "event": "Birds eat all the breadcrumbs that Hansel dropped, leaving no trail to follow home."
+                        },
+                        {
+                            "event": "Hansel and Gretel wander lost in the forest for three days, growing hungry and desperate."
+                        },
+                        {
+                            "event": "A beautiful white bird leads Hansel and Gretel deeper into the forest with its enchanting song."
+                        },
+                        {
+                            "event": "Hansel and Gretel discover a house made entirely of gingerbread, cake, and candy."
+                        },
+                        {
+                            "event": "The hungry children begin eating pieces of the candy house to satisfy their hunger."
+                        },
+                        {
+                            "event": "A voice from inside the house calls out, asking who is nibbling at the house."
+                        },
+                        {
+                            "event": "The Witch emerges from the house, initially appearing kind and welcoming to the children."
+                        },
+                        {
+                            "event": "The Witch invites Hansel and Gretel inside, offering them a feast of milk, pancakes, sugar, apples, and nuts."
+                        },
+                        {
+                            "event": "The Witch provides soft beds for the children, making them feel safe and cared for."
+                        },
+                        {
+                            "event": "The Witch reveals her true evil nature, planning to fatten and eat the children."
+                        },
+                        {
+                            "event": "The Witch locks Hansel in a cage and forces Gretel to work as her servant."
+                        },
+                        {
+                            "event": "The Witch feeds Hansel rich foods daily to fatten him up for cooking."
+                        },
+                        {
+                            "event": "Hansel cleverly tricks the near-blind Witch by offering her a thin bone instead of his finger when she checks his weight."
+                        },
+                        {
+                            "event": "The impatient Witch decides to cook Hansel regardless of his size and orders Gretel to prepare the oven."
+                        },
+                        {
+                            "event": "The Witch asks Gretel to check if the oven is hot enough by crawling inside."
+                        },
+                        {
+                            "event": "Gretel pretends not to understand how to get into the oven, asking the Witch to demonstrate."
+                        },
+                        {
+                            "event": "Gretel pushes the Witch into the hot oven when she leans in to show how to crawl inside."
+                        },
+                        {
+                            "event": "The Witch burns to death in her own oven, screaming horribly as she dies."
+                        },
+                        {
+                            "event": "Gretel frees Hansel from his cage, and they celebrate their victory over the evil Witch."
+                        },
+                        {
+                            "event": "Hansel and Gretel discover the Witch's treasure hoard of pearls and precious stones."
+                        },
+                        {
+                            "event": "The children fill their pockets with the Witch's treasure before leaving the candy house."
+                        },
+                        {
+                            "event": "Hansel and Gretel set out to find their way home through the unfamiliar forest."
+                        },
+                        {
+                            "event": "A large body of water blocks their path, with no bridge or boat to cross."
+                        },
+                        {
+                            "event": "A white duck helps ferry Hansel and Gretel across the water one at a time."
+                        },
+                        {
+                            "event": "The children recognize familiar landmarks and realize they are near their home."
+                        },
+                        {
+                            "event": "Hansel and Gretel arrive home to find their father alone, as their stepmother has died."
+                        },
+                        {
+                            "event": "The father welcomes his children back with tears of joy and regret for abandoning them."
+                        },
+                        {
+                            "event": "Hansel and Gretel share the Witch's treasure with their father, ending their family's poverty."
+                        },
+                        {
+                            "date": "universal/End of time",
+                            "event": "The family lives happily together, with no more worries about hunger or want."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
